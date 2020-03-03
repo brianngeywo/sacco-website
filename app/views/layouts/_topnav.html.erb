@@ -1,0 +1,47 @@
+  <!--Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark black">
+      <div class="container">
+        <!-- Collapsible content -->
+        <div class="expand navbar-expand" id="basicExampleNav">
+
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <%= link_to 'Home', '/', class:"navbar-brand"%>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'About', about_About_Us_path, class:"nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Products & Services', services_services_path, class:"nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'News & Events', latest_latest_path, class:"nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Contact', contact_contacts_path, class:"nav-link" %>
+            </li>
+              <% if signed_in? %>
+                <li class="nav-item">
+                  <%= link_to 'Logout', destroy_user_session_path, method: :delete, class:"nav-link" %>
+                </li>
+                <% else %>
+                <li class="nav-item">
+                  <%= link_to 'Member Portal', new_user_session_path, class:"nav-link" %>
+                </li>
+              <% end %>
+          </ul>
+          <!-- Links -->
+        </div>
+      </div>    
+      <!-- Additional container -->
+    </nav>
+    <!--/.Navbar-->
+
+    <div class="jumbotron">
+      <h1 class="display-4 font-weight-bold white-text">WELCOME TO <span class="green-text">HEKIMA SACCO</span> </h1>
+        <p class="lead white-text">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <p class="lead">
+        <a class="btn btn-green btn-lg" href="#" role="button">Learn more</a>
+      </p>
+    </div>
