@@ -1,24 +1,10 @@
-# README
+clone it.
+make sure rvm and use the correct ruby version.. i.e 2.5.7
+bundle install
+rake db:setup
+rails s
+visit localhot:3000
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Admin by Active Admin
+check password for admin interface from active Admin docs
+enjoy🎉
